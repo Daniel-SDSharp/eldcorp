@@ -41,6 +41,7 @@
   "dependencies": {
     "@img/sharp-win32-x64": "^0.33.2",
     "@qwikest/icons": "^0.0.13",
+    "qwik-transition": "^0.0.7",
     "sharp": "^0.33.2"
   }
 }

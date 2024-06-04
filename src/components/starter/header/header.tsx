@@ -3,11 +3,11 @@ import styles from './header.module.css';
 
 export default component$(() => {
   return (
-    <header class={styles.header}>
-      <div class={['container', styles.wrapper] + " absolute flex items-center w-full justify-between !px-[70px]"}>
+    <header class={styles.header + " relative z-[999999] "}>
+      <div class={['container', styles.wrapper] + "  absolute flex items-center w-full justify-between !px-[70px]"}>
         <div class={styles.logo}>
           <a href="/" title="qwik">
-            <img height={50} width={143} src="public/logo.png" />
+            <img height={50} width={170} src="public/logo.png" />
           </a>
         </div>
         <ul>
@@ -23,7 +23,7 @@ export default component$(() => {
           </li>
           <li>
             <a class="text-[14px] font-bold" href="https://qwik.builder.io/tutorial/welcome/overview/" target="_blank">
-             Services 
+              Services
             </a>
           </li>
           <li>
@@ -33,7 +33,7 @@ export default component$(() => {
           </li>
           <li>
             <a class="text-[14px] font-bold" href="https://qwik.builder.io/tutorial/welcome/overview/" target="_blank">
-             Our Partners 
+              Our Partners
             </a>
           </li>
         </ul>
