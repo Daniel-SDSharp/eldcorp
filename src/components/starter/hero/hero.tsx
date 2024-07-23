@@ -29,7 +29,6 @@ export function MdiInstagram(props: QwikIntrinsicElements['svg'], key: string) {
   )
 }
 
-
 export default component$(() => {
   const homeStep = useSignal(0)
 
@@ -38,36 +37,36 @@ export default component$(() => {
   });
   return (
     <div class="">
-      <video muted autoPlay loop class={`absolute ${homeStep.value === 0 ? " opacity-1" : "opacity-0"}  transition-opacity ease-in-out duration-1000 w-full h-[100vh] object-cover blur`} id="myVideo" src='public/samplevid.mp4'>
+      <video muted autoPlay loop class={`absolute ${homeStep.value === 0 ? " opacity-1" : "opacity-0"}  transition-opacity ease-in-out duration-1000 w-full h-[100vh] object-cover blur`} id="myVideo" src='public/vid2.mp4'>
       </video>
-      <video muted autoPlay loop class={`absolute ${homeStep.value === 1 ? " opacity-1" : "opacity-0"} transition-opacity ease-in-out duration-1000 w-full h-[100vh] object-cover blur`} id="myVideo2" src='public/samplevid2.mp4'>
+      <video muted autoPlay loop class={`absolute ${homeStep.value === 1 ? " opacity-1" : "opacity-0"} transition-opacity ease-in-out duration-1000 w-full h-[100vh] object-cover blur`} id="myVideo2" src='public/vid1.mp4'>
       </video>
       <video muted autoPlay loop class={`absolute ${homeStep.value === 2 ? " opacity-1" : "opacity-0"} transition-opacity ease-in-out duration-1000 w-full h-[100vh] object-cover blur`} id="myVideo2" src='public/samplevid3.mp4'>
       </video>
       <div class={`absolute top-[30%] pl-[70px] transition-init ${homeStep.value === 0 ? " opacity-1" : "opacity-0"} transition-opacity ease-in-out duration-500`}>
-        <TitleComponent name='BEYOND BOUNDARIES' isLong={false} />
+        <TitleComponent name='MÁS ALLÁ DE LOS LÍMITES' isLong={false} />
         <div class="mt-8 mb-[180px]">
-          <p class="font-bold text-[88px] transition-init playfair">Empowering Industries,</p>
-          <p class="font-bold text-[88px] transition-init playfair">Forging Partnerships</p>
-          <button class="bg-[#E29D21] w-[232px] h-[65px] mt-10 text-black font-bold rounded-md">Get In Touch</button>
+          <p class="font-bold text-[88px] transition-init playfair">Horizontes Industriales</p>
+          <p class="font-bold text-[88px] transition-init playfair">Desbloqueados</p>
+          <button class="bg-[#E29D21] w-[232px] h-[65px] mt-10 text-black font-bold rounded-md">Ponerse en Contacto</button>
         </div>
         <HeroSteps selectedStep={homeStep.value} onClickStep={onClickStep} />
       </div>
-      <div class={`absolute top-[30%] pl-[70px] transition-init ${homeStep.value === 1 ? " opacity-1" : "opacity-0"} transition-opacity ease-in-out duration-500`}>
-        <TitleComponent name='MECHANICAL MASTERY' isLong={false} />
+      <div class={`absolute top-[30%] pl-[70px] transition-init ${homeStep.value === 1 ? " opacity-1" : "opacity-0"} transition-opacity ease-in-out duración-500`}>
+        <TitleComponent name='MAESTRÍA MECÁNICA' isLong={false} />
         <div class="mt-8 mb-[180px]">
-          <p class="font-bold text-[88px] transition-init playfair">Industrial Horizons</p>
-          <p class="font-bold text-[88px] transition-init playfair">Unlocked</p>
-          <button class="bg-[#E29D21] w-[232px] h-[65px] mt-10 text-black font-bold rounded-md">Get In Touch</button>
+          <p class="font-bold text-[88px] transition-init playfair">Empoderando Industrias,</p>
+          <p class="font-bold text-[88px] transition-init playfair">Forjando Alianzas</p>
+          <button class="bg-[#E29D21] w-[232px] h-[65px] mt-10 text-black font-bold rounded-md">Ponerse en Contacto</button>
         </div>
         <HeroSteps selectedStep={homeStep.value} onClickStep={onClickStep} />
       </div>
-      <div class={`absolute top-[30%] pl-[70px] transition-init ${homeStep.value === 2 ? " opacity-1" : "opacity-0"} transition-opacity ease-in-out duration-500`}>
-        <TitleComponent name='INDUSTRIAL PROJECTS' isLong={false} />
+      <div class={`absolute top-[30%] pl-[70px] transition-init ${homeStep.value === 2 ? " opacity-1" : "opacity-0"} transition-opacity ease-in-out duración-500`}>
+        <TitleComponent name='PROYECTOS INDUSTRIALES' isLong={false} />
         <div class="mt-8 mb-[180px]">
-          <p class="font-bold text-[88px] transition-init playfair">Elevating Project Outcomes</p>
+          <p class="font-bold text-[88px] transition-init playfair">Elevando Resultados de Proyectos</p>
           <p class="font-bold text-[88px] transition-init playfair text-transparent">_</p>
-          <button class="bg-[#E29D21] w-[232px] h-[65px] mt-10 text-black font-bold rounded-md">Get In Touch</button>
+          <button class="bg-[#E29D21] w-[232px] h-[65px] mt-10 text-black font-bold rounded-md">Ponerse en Contacto</button>
         </div>
         <HeroSteps selectedStep={homeStep.value} onClickStep={onClickStep} />
       </div>

@@ -12,27 +12,27 @@ export default component$(() => {
         </div>
         <ul>
           <li>
-            <a class="text-[14px] font-bold" href="https://qwik.builder.io/docs/components/overview/" target="_blank">
+            <a class="text-[14px] font-bold" href="" target="_blank">
               About Us
             </a>
           </li>
           <li>
-            <a class="text-[14px] font-bold" href="https://qwik.builder.io/examples/introduction/hello-world/" target="_blank">
+            <a class="text-[14px] font-bold" href="" target="_blank">
               Our Work
             </a>
           </li>
           <li>
-            <a class="text-[14px] font-bold" href="https://qwik.builder.io/tutorial/welcome/overview/" target="_blank">
+            <a class="text-[14px] font-bold" href="" target="_blank">
               Services
             </a>
           </li>
           <li>
-            <a class="text-[14px] font-bold" href="https://qwik.builder.io/tutorial/welcome/overview/" target="_blank">
+            <a class="text-[14px] font-bold" href="" target="_blank">
               Contacts
             </a>
           </li>
           <li>
-            <a class="text-[14px] font-bold" href="https://qwik.builder.io/tutorial/welcome/overview/" target="_blank">
+            <a class="text-[14px] font-bold" href="" target="_blank">
               Our Partners
             </a>
           </li>

@@ -80,93 +80,90 @@ export default component$(() => {
     <>
       <Hero />
 
-      <div class="pt-[947px]">
+      <div class="pt-[945px]">
         <div class="flex items-center justify-around px-[250px] counters h-[261px] w-full bg-white">
           <div class="border-l-4 pl-5 border-l-[#E29D21]">
             <p class="text-[#111827] text-[48px] font-bold">8,000</p>
-            <p class="text-[#111827] text-[24px] font-bold">Items supplied</p>
+            <p class="text-[#111827] text-[24px] font-bold">Ítems suministrados</p>
           </div>
           <div class="border-l-4 pl-5 border-l-[#E29D21]">
             <p class="text-[#111827] text-[48px] font-bold">12,000+</p>
-            <p class="text-[#111827] text-[24px] font-bold">Pounds dispatched</p>
+            <p class="text-[#111827] text-[24px] font-bold">Libras despachadas</p>
           </div>
           <div class="border-l-4 pl-5 border-l-[#E29D21]">
             <p class="text-[#111827] text-[48px] font-bold">16</p>
-            <p class="text-[#111827] text-[24px] font-bold">Cubic feet dispatched</p>
+            <p class="text-[#111827] text-[24px] font-bold">Pies cúbicos despachados</p>
           </div>
           <div class="border-l-4 pl-5 border-l-[#E29D21]">
             <p class="text-[#111827] text-[48px] font-bold">21+</p>
-            <p class="text-[#111827] text-[24px] font-bold">Clients trust us</p>
+            <p class="text-[#111827] text-[24px] font-bold">Clientes que confían en nosotros</p>
           </div>
         </div>
+
         <div class="container h-[420px]">
 
-          {/* ABOUT US SECTION  */}
           <div class="about flex space-x-10 mt-24 px-[90px]">
             <div>
-              <TitleComponent name='ABOUT US' isLong={false} />
+              <TitleComponent name='SOBRE NOSOTROS' isLong={false} />
               <div class="leading-6 mt-20 text-[16px] text-black font-bold p-14 pt-10 h-[297px] w-[370px] bg-[#E29D21]">
-                Pioneering development and global trade from Puerto Ordaz, Venezuela. We blend heritage with innovation, forging lasting connections and reshaping industry standards for a brighter future.
+                Desarrollo pionero y comercio global desde Puerto Ordaz, Venezuela. Mezclamos herencia con innovación, forjando conexiones duraderas y redefiniendo los estándares de la industria para un futuro más brillante.
               </div>
             </div>
             <div>
-              <p class="text-[64px] font-bold playfair">Why Us</p>
+              <p class="text-[64px] font-bold playfair">¿Por qué Nosotros?</p>
               <p class="leading-6 w-[800px] mt-6">
-                At ELD, we're not just a company; we're a legacy of innovation and trust. With over 19 years of experience in Development, Project Evaluation, and International Trade, we're your go-to partner for excellence. From our roots in Puerto Ordaz, Venezuela, we've grown to become exclusive representatives of American companies, serving the entire Venezuelan territory and expanding internationally with ELD CORP.
+                En ELD, no somos solo una empresa; somos un legado de innovación y confianza. Con más de 19 años de experiencia en Desarrollo, Evaluación de Proyectos y Comercio Internacional, somos su socio ideal para la excelencia. Desde nuestras raíces en Puerto Ordaz, Venezuela, hemos crecido para convertirnos en representantes exclusivos de empresas estadounidenses, sirviendo a todo el territorio venezolano y expandiéndonos internacionalmente con ELD CORP.
               </p>
               <p class="mt-5 font-bold text-[#E29D21]">
-                Choose us for unrivaled expertise and unwavering commitment.
+                Elija nuestra experiencia incomparable y compromiso inquebrantable.
               </p>
               <div class="flex mt-12 space-x-14 justify-around">
                 <div class="pt-4 why-us h-[170px] w-[170px] bg-white text-[18px] text-[#0E1B1B] font-bold text-center rounded-md">
                   <div class="flex justify-center">
                     <Globe />
                   </div>
-                  <p class="mt-4">Global Reach</p>
+                  <p class="mt-4">Alcance Global</p>
                 </div>
                 <div class="pt-4 why-us h-[170px] w-[170px] bg-white text-[18px] text-[#0E1B1B] font-bold flex-col text-center rounded-md">
                   <div class="flex justify-center">
                     <MdiTools />
                   </div>
-                  <p class="mt-4">Expertise</p>
+                  <p class="mt-4">Experiencia</p>
                 </div>
                 <div class="pt-4 why-us h-[170px] w-[170px] bg-white text-[18px] text-[#0E1B1B] font-bold text-center rounded-md">
                   <div class="flex justify-center">
                     <Handshake />
                   </div>
-                  <p class="mt-4">Trusted Partnerships</p>
+                  <p class="mt-4">Asociaciones de Confianza</p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* OUR WORK SECTION */}
           <div class="work mt-24 px-[90px]">
-            <TitleComponent name='SELECTED WORK' isLong={true} />
+            <TitleComponent name='TRABAJOS SELECCIONADOS' isLong={true} />
             <div class="mt-10">
-              <p class="text-white font-bold text-[64px] playfair">Our Work</p>
+              <p class="text-white font-bold text-[64px] playfair">Nuestro Trabajo</p>
               <p class="text-[16px] text-white w-[1171px] mt-5 leading-6">
-                Explore a showcase of our past endeavors. Through a blend of tradition and innovation, each project exemplifies our dedication to excellence, leaving a lasting mark on industries worldwide.
+                Explora una muestra de nuestros esfuerzos pasados. A través de una combinación de tradición e innovación, cada proyecto ejemplifica nuestra dedicación a la excelencia, dejando una marca duradera en industrias de todo el mundo.
               </p>
             </div>
             <div class="flex mt-16">
               <div class=" w-[900px] h-[480px] flex">
                 <div class="">
-
                   <p class={`absolute ${workStep.value === 1 ? " opacity-1" : "opacity-0"} transition-opacity ease-in-out duration-1000 text-[#E29D21] text-[120px] font-bold mr-10 ml-[105px] mt-[-20px]`}>01</p>
                   <p class={`absolute ${workStep.value === 2 ? " opacity-1" : "opacity-0"}  transition-opacity ease-in-out duration-1000 text-[#E29D21] text-[120px] font-bold mr-10 ml-[105px] mt-[-20px]`}>02</p>
                   <p class={`absolute ${workStep.value === 3 ? " opacity-1" : "opacity-0"}  transition-opacity ease-in-out duration-1000 text-[#E29D21] text-[120px] font-bold mr-10 ml-[105px] mt-[-20px]`}>03</p>
                   <p class={` ${workStep.value === 4 ? " visible opacity-1" : "opacity-0"}  transition-opacity ease-in-out duration-1000 text-[#E29D21] text-[120px] font-bold mr-10 ml-[105px] mt-[-20px]`}>1</p>
-
                   <div>
-                    <img src="public/photo2.png" class={`absolute ${workStep.value === 1 ? " opacity-1" : "opacity-0"} transition-opacity ease-in-out duration-1000 mt-10 h-[319px] w-[405px]`} />
-                    <img src="public/work2.jpg" class={`absolute ${workStep.value === 2 ? " opacity-1" : "opacity-0"} transition-opacity ease-in-out duration-1000 mt-10 h-[319px] w-[405px]`} />
+                    <img src="public/ourwork1.png" class={`absolute ${workStep.value === 1 ? " opacity-1" : "opacity-0"} transition-opacity ease-in-out duration-1000 mt-10 h-[319px] w-[405px]`} />
+                    <img src="public/ourwork3.png" class={`absolute ${workStep.value === 2 ? " opacity-1" : "opacity-0"} transition-opacity ease-in-out duration-1000 mt-10 h-[319px] w-[405px]`} />
                     <img src="public/work3.jpg" class={`absolute ${workStep.value === 3 ? " opacity-1" : "opacity-0"} transition-opacity ease-in-out duration-1000 mt-10 h-[319px] w-[405px]`} />
                   </div>
                 </div>
                 <div class="ml-20">
                   {/* Work Image 2  */}
-                  <img src="public/photo.png" class={`absolute h-[385px] w-[570px] ${workStep.value === 1 ? " opacity-1" : "opacity-0"} transition-opacity ease-in-out duration-1000`} alt="" />
+                  <img src="public/ourwork2.png" class={`absolute h-[385px] w-[570px] ${workStep.value === 1 ? " opacity-1" : "opacity-0"} transition-opacity ease-in-out duration-1000`} alt="" />
                   <img src="public/work22.jpg" class={`absolute h-[385px] w-[570px] ${workStep.value === 2 ? " opacity-1" : "opacity-0"} transition-opacity ease-in-out duration-1000`} alt="" />
                   <img src="public/work33.jpg" class={`absolute h-[385px] w-[570px] ${workStep.value === 3 ? " opacity-1" : "opacity-0"} transition-opacity ease-in-out duration-1000`} alt="" />
                 </div>
@@ -182,14 +179,14 @@ export default component$(() => {
                     <p class="text-[48px] font-bold playfair">Caterpillar</p>
                     <div class={`mt-1 h-[3px] mr-6 !bg-[#E29D21] w-[240px]`}></div>
                     <p class="mt-5 w-[416px] h-[144px] leading-6">
-                      We partnered with Caterpillar Inc. to optimize their supply chain operations, implementing innovative logistics solutions that enhanced efficiency and reduced costs. Our collaboration ensured seamless distribution of heavy machinery parts, strengthening Caterpillar's market presence and customer satisfaction.
+                      Nos asociamos con Caterpillar Inc. para optimizar sus operaciones de cadena de suministro, implementando soluciones logísticas innovadoras que mejoraron la eficiencia y redujeron los costos. Nuestra colaboración aseguró la distribución sin problemas de partes de maquinaria pesada, fortaleciendo la presencia en el mercado de Caterpillar y la satisfacción del cliente.
                     </p>
                   </div>
                   <div class={`absolute ${workStep.value === 3 ? " opacity-1" : "opacity-0"} transition-opacity ease-in-out duration-1000`}>
                     <p class="text-[48px] font-bold playfair">John Deere</p>
                     <div class={`mt-1 h-[3px] mr-6 !bg-[#E29D21] w-[250px]`}></div>
                     <p class="mt-5 w-[416px] h-[144px]  leading-6">
-                      John Deere & Company entrusted us to streamline their production processes, implementing advanced automation solutions and lean manufacturing principles. Our efforts resulted in significant productivity gains and cost savings, positioning John Deere for sustained growth and competitiveness in the agricultural machinery market.
+                      John Deere & Company nos confió la optimización de sus procesos de producción, implementando soluciones avanzadas de automatización y principios de fabricación esbelta. Nuestros esfuerzos resultaron en ganancias significativas de productividad y ahorro de costos, posicionando a John Deere para un crecimiento sostenido y competitividad en el mercado de maquinaria agrícola.
                     </p>
                   </div>
                 </div>
@@ -200,18 +197,19 @@ export default component$(() => {
             </div>
           </div>
 
+
           {/* EXPERTS SECTION */}
           <div class="experts px-[90px] mt-24">
             <div>
               <TitleComponent name='Testimonials' isLong={false} />
             </div>
             <div class="services px-[90px] mt-10">
-              <p class="text-white font-bold text-[64px] text-center playfair">Testimonials</p>
+              <p class="text-white font-bold text-[64px] text-center playfair">Testimoniales</p>
               <section class="py-10">
                 <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                   <div class="flex flex-col items-center">
                     <div class="text-center">
-                      <h2 class="text-3xl font-bold text-white sm:text-4xl xl:text-5xl font-pj">Our trusted customers say about us</h2>
+                      <h2 class="text-3xl font-bold text-white sm:text-4xl xl:text-5xl font-pj">Nuestros clientes de confianza dicen sobre nosotros</h2>
                     </div>
 
                     <div class="relative mt-10 md:mt-24 md:order-2">
@@ -253,7 +251,7 @@ export default component$(() => {
 
                               <blockquote class="flex-1 mt-8">
                                 <p class="text-lg leading-relaxed text-gray-900 font-pj">“
-                                  ELDCorp truly transformed our logistics operations. Their expertise and dedication helped us streamline processes, saving time and resources."
+                                  ELDCorp realmente transformó nuestras operaciones logísticas. Su experiencia y dedicación nos ayudaron a optimizar procesos, ahorrando tiempo y recursos.
                                 </p>
                               </blockquote>
                             </div>
@@ -301,7 +299,7 @@ export default component$(() => {
 
                               <blockquote class="flex-1 mt-8">
                                 <p class="text-lg leading-relaxed text-gray-900 font-pj">“
-                                  Working with ELDCorp was a game-changer for our international expansion. Their tailored solutions and proactive approach exceeded our expectations.
+                                  Trabajar con ELDCorp fue un cambio de juego para nuestra expansión internacional. Sus soluciones a medida y enfoque proactivo superaron nuestras expectativas
                                   ”</p>
                               </blockquote>
                             </div>
@@ -349,7 +347,7 @@ export default component$(() => {
 
                               <blockquote class="flex-1 mt-8">
                                 <p class="text-lg leading-relaxed text-gray-900 font-pj">“
-                                  ELDCorp's commitment to excellence is unmatched. They delivered innovative solutions with professionalism and efficiency, driving our business forward.
+                                  El compromiso de ELDCorp con la excelencia es incomparable. Entregaron soluciones innovadoras con profesionalismo y eficiencia, impulsando nuestro negocio hacia adelante.
                                   ”</p>
                               </blockquote>
                             </div>
@@ -380,9 +378,9 @@ export default component$(() => {
               <TitleComponent name='WHAT WE OFFER' isLong={true} />
             </div>
             <div class="services  mt-10">
-              <p class="text-left text-white font-bold text-[64px] playfair">Our Services</p>
+              <p class="text-left text-white font-bold text-[64px] playfair">Nuestros servicios</p>
               <p class="text-white mt-8 leading-6">
-                Uncover our suite of services designed to meet your business needs. With a blend of traditional expertise and innovative solutions, we're dedicated to delivering excellence and making a significant impact across industries.
+                Descubre nuestra gama de servicios diseñados para satisfacer las necesidades de tu negocio. Con una combinación de experiencia tradicional y soluciones innovadoras, estamos dedicados a ofrecer excelencia y generar un impacto significativo en diferentes industrias.
               </p>
               <div class="flex mt-12 space-x-12">
                 <div class="relative w-[895px] h-[385px]">
@@ -392,11 +390,11 @@ export default component$(() => {
                   </div>
                 </div>
                 <div class="w-[444px]">
-                  <p class="text-[42px] font-bold playfair">Project Management</p>
+                  <p class="text-[42px] font-bold playfair">Productos</p>
                   <p class="text-white mt-8 leading-6">
-                    ELD. offers comprehensive project management solutions. From planning to execution, our expert team ensures efficient and successful project delivery, meeting your business goals with precision and excellence.
+                    ELD ofrece soluciones integrales de gestión de proyectos. Desde la planificación hasta la ejecución, nuestro equipo de expertos garantiza una entrega de proyectos eficiente y exitosa, cumpliendo con precisión y excelencia los objetivos de tu negocio.
                   </p>
-                  <button class="bg-[#E29D21] w-[232px] h-[65px] mt-24 text-black font-bold rounded-md">Get In Touch</button>
+                  <button class="bg-[#E29D21] w-[232px] h-[65px] mt-24 text-black font-bold rounded-md">Ponte en contacto</button>
                 </div>
               </div>
             </div>
@@ -411,9 +409,9 @@ export default component$(() => {
                 <img width="590px" height="450px" src="public/sampleformimg.jpg" class=""></img>
               </div>
               <div class="flex-col w-1/2">
-                <p class="text-left text-white font-bold text-[64px] playfair">Get in touch with us</p>
+                <p class="text-left text-white font-bold text-[64px] playfair">Ponte en contacto con nosotros</p>
                 <p class="text-white mt-8 leading-6">
-                  Completely synergize resource taxing relationships via premier niche ynamically innovate state of the art customer service.
+                  Sinergiza completamente las relaciones de recursos gravosas a través de un nicho premier innovando dinámicamente en el estado del arte del servicio al cliente.
                 </p>
                 <div class="mt-10">
                   <div class="w-[350px] flex justify-start mt-8">
@@ -421,7 +419,7 @@ export default component$(() => {
                       <PhoneIcon></PhoneIcon>
                     </div>
                     <div class="mt-2">
-                      <p class="text-left text-white text-[14px]">Have any question?</p>
+                      <p class="text-left text-white text-[14px]">¿Tienes alguna pregunta?</p>
                       <p class="text-[#E29D21] leading-6">
                         +01 569  896 654
                       </p>
@@ -432,7 +430,7 @@ export default component$(() => {
                       <EmailIcon></EmailIcon>
                     </div>
                     <div class="mt-2">
-                      <p class="text-left text-white text-[14px]">Write Email</p>
+                      <p class="text-left text-white text-[14px]">Escribir correo electrónico</p>
                       <p class="text-[#E29D21] leading-6">
                         Info@whitecollar.com
                       </p>
@@ -443,7 +441,7 @@ export default component$(() => {
                       <IcBaselineLocationOn></IcBaselineLocationOn>
                     </div>
                     <div class="mt-2">
-                      <p class="text-left text-white text-[14px]">Visit anytime</p>
+                      <p class="text-left text-white text-[14px]">Visita en cualquier momento</p>
                       <p class="text-[#E29D21] leading-6">
                         King Street,
                         Prior Lake, New York
@@ -453,7 +451,7 @@ export default component$(() => {
                 </div>
               </div>
             </div>
-            <p class="mt-14 text-center text-white font-bold text-[64px] playfair">Request A Call Back!</p>
+            <p class="mt-14 text-center text-white font-bold text-[64px] playfair">¡Solicita una devolución de llamada!</p>
             <div class="mt-10">
               <div class="flex w-full space-x-10">
                 <div class="w-6/12">
