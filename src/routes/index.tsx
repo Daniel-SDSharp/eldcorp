@@ -1,4 +1,4 @@
-import { $, QRL, QwikIntrinsicElements, component$, useSignal, useTask$ } from '@builder.io/qwik';
+import { $, QRL, QwikIntrinsicElements, component$, useSignal } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 
 import Hero from '~/components/starter/hero/hero';
