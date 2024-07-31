@@ -12,27 +12,27 @@ export default component$(() => {
         </div>
         <ul>
           <li>
-            <a class="text-[14px] font-bold" href="" target="_blank">
+            <a class="text-[14px] font-bold hover:!text-[#111827]" href="#about" >
               About Us
             </a>
           </li>
           <li>
-            <a class="text-[14px] font-bold" href="" target="_blank">
+            <a class="text-[14px] font-bold hover:!text-[#111827]" href="#work" >
               Our Work
             </a>
           </li>
           <li>
-            <a class="text-[14px] font-bold" href="" target="_blank">
+            <a class="text-[14px] font-bold hover:!text-[#111827]" href="#services" >
               Services
             </a>
           </li>
           <li>
-            <a class="text-[14px] font-bold" href="" target="_blank">
+            <a class="text-[14px] font-bold hover:!text-[#111827]" href="#contact">
               Contacts
             </a>
           </li>
-          <li>
-            <a class="text-[14px] font-bold" href="" target="_blank">
+          <li class="relative group">
+            <a class="text-[14px] font-bold hover:!text-[#111827]" href="#">
               Our Partners
             </a>
           </li>

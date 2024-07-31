@@ -80,29 +80,34 @@ export default component$(() => {
     <>
       <Hero />
 
-      <div class="pt-[945px]">
+      <div class="pt-[935px]">
         <div class="flex items-center justify-around px-[250px] counters h-[261px] w-full bg-white">
           <div class="border-l-4 pl-5 border-l-[#E29D21]">
-            <p class="text-[#111827] text-[48px] font-bold">8,000</p>
-            <p class="text-[#111827] text-[24px] font-bold">Ítems suministrados</p>
+            <p class="text-[#111827] text-[48px] font-bold">8k</p>
+            <p class="text-[#111827] text-[24px] font-bold">Ítems</p>
+            <p class="text-[#111827] text-[24px] font-bold">suministrados</p>
           </div>
           <div class="border-l-4 pl-5 border-l-[#E29D21]">
-            <p class="text-[#111827] text-[48px] font-bold">12,000+</p>
-            <p class="text-[#111827] text-[24px] font-bold">Libras despachadas</p>
+            <p class="text-[#111827] text-[48px] font-bold">12k+</p>
+            <p class="text-[#111827] text-[24px] font-bold">Libras </p>
+            <p class="text-[#111827] text-[24px] font-bold"> despachadas</p>
           </div>
           <div class="border-l-4 pl-5 border-l-[#E29D21]">
             <p class="text-[#111827] text-[48px] font-bold">16</p>
-            <p class="text-[#111827] text-[24px] font-bold">Pies cúbicos despachados</p>
+            <p class="text-[#111827] text-[24px] font-bold">Pies cúbicos</p>
+            <p class="text-[#111827] text-[24px] font-bold">despachados</p>
+            {/* <p class="text-[#111827] text-[24px] font-bold">despachados</p> */}
           </div>
           <div class="border-l-4 pl-5 border-l-[#E29D21]">
             <p class="text-[#111827] text-[48px] font-bold">21+</p>
-            <p class="text-[#111827] text-[24px] font-bold">Clientes que confían en nosotros</p>
+            <p class="text-[#111827] text-[24px] font-bold">Clientes confían</p>
+            <p class="text-[#111827] text-[24px] font-bold">en nosotros</p>
           </div>
         </div>
 
         <div class="container h-[420px]">
 
-          <div class="about flex space-x-10 mt-24 px-[90px]">
+          <div id="about" class="flex space-x-10 mt-24 px-[90px]">
             <div>
               <TitleComponent name='SOBRE NOSOTROS' isLong={false} />
               <div class="leading-6 mt-20 text-[16px] text-black font-bold p-14 pt-10 h-[297px] w-[370px] bg-[#E29D21]">
@@ -140,7 +145,7 @@ export default component$(() => {
             </div>
           </div>
 
-          <div class="work mt-24 px-[90px]">
+          <div id="work" class="mt-24 px-[90px]">
             <TitleComponent name='TRABAJOS SELECCIONADOS' isLong={true} />
             <div class="mt-10">
               <p class="text-white font-bold text-[64px] playfair">Nuestro Trabajo</p>
@@ -373,7 +378,7 @@ export default component$(() => {
           </div>
 
           {/* EXPERTS SECTION */}
-          <div class="experts px-[90px] mt-24">
+          <div id="services" class="px-[90px] mt-24">
             <div>
               <TitleComponent name='WHAT WE OFFER' isLong={true} />
             </div>
@@ -383,24 +388,51 @@ export default component$(() => {
                 Descubre nuestra gama de servicios diseñados para satisfacer las necesidades de tu negocio. Con una combinación de experiencia tradicional y soluciones innovadoras, estamos dedicados a ofrecer excelencia y generar un impacto significativo en diferentes industrias.
               </p>
               <div class="flex mt-12 space-x-12">
-                <div class="relative w-[895px] h-[385px]">
-                  <img src="public/service.png" alt="" class="" />
+                <div class="relative w-[780px] h-[340px]">
+                  {serviceStep.value === 1 ?
+                    <img src="public/serviceproducts.png" class={``} alt="" />
+                    :
+                    serviceStep.value === 2 ?
+                      <img src="public/serviceconsolidation.png" class={``} alt="" />
+                      :
+                      <img src="public/servicealmacen.png" class={``} alt="" />
+                  }
                   <div class="absolute bottom-12 left-8">
                     <Steps selectedStep={serviceStep.value} onClickStep={onClickStepService} />
                   </div>
                 </div>
-                <div class="w-[444px]">
-                  <p class="text-[42px] font-bold playfair">Productos</p>
-                  <p class="text-white mt-8 leading-6">
-                    ELD ofrece soluciones integrales de gestión de proyectos. Desde la planificación hasta la ejecución, nuestro equipo de expertos garantiza una entrega de proyectos eficiente y exitosa, cumpliendo con precisión y excelencia los objetivos de tu negocio.
-                  </p>
-                  <button class="bg-[#E29D21] w-[232px] h-[65px] mt-24 text-black font-bold rounded-md">Ponte en contacto</button>
-                </div>
+                {serviceStep.value === 1 ?
+                  <div class="w-[444px]">
+                    <p class="text-[42px] font-bold playfair">Productos</p>
+                    <p class="text-white mt-8 leading-6">
+                      En ELDCorp, ofrecemos una amplia gama de piezas de maquinaria de alta calidad para satisfacer todas tus necesidades industriales. Nuestros productos están diseñados para garantizar el máximo rendimiento y durabilidad, ayudando a optimizar la eficiencia de tus operaciones.
+
+                    </p>
+                    <button class="bg-[#E29D21] w-[232px] h-[65px] mt-16 text-black font-bold rounded-md"> Ponte en contacto</button>
+                  </div>
+                  :
+                  serviceStep.value === 2 ?
+                    <div class="w-[444px]">
+                      <p class="text-[42px] font-bold playfair">Consolidación</p>
+                      <p class="text-white mt-8 leading-6">
+                        En ELDCorp, ofrecemos servicios de consolidación para optimizar tu cadena de suministro. Nuestro equipo se encarga de reunir y combinar tus envíos de piezas de maquinaria, reduciendo costos y mejorando la eficiencia logística.
+                      </p>
+                      <button class="bg-[#E29D21] w-[232px] h-[65px] mt-16 text-black font-bold rounded-md">Ponte en contacto</button>
+                    </div>
+                    :
+                    <div class="w-[444px]">
+                      <p class="text-[42px] font-bold playfair">Almacén</p>
+                      <p class="text-white mt-8 leading-6">
+                        ELDCorp ofrece servicios de almacenamiento seguros y eficientes para tus piezas de maquinaria. Nuestras instalaciones están equipadas con la última tecnología en gestión de inventarios, asegurando que tus productos estén protegidos y disponibles cuando los necesites.
+                      </p>
+                      <button class="bg-[#E29D21] w-[232px] h-[65px] mt-16 text-black font-bold rounded-md">Ponte en contacto</button>
+                    </div>
+                }
               </div>
             </div>
           </div>
 
-          <div class="form px-[90px] mt-24">
+          <div class="form px-[90px] mt-24" id="contact">
             <div>
               <TitleComponent name='CONTACT US' isLong={true} />
             </div>
@@ -473,6 +505,7 @@ export default component$(() => {
                 <textarea class="rounded-md w-full pl-4 pt-4" rows={10} placeholder='Message' />
               </div>
             </div>
+            <button class="bg-[#E29D21] w-[232px] h-[65px] mt-8 text-black font-bold rounded-md">Enviar</button>
           </div>
 
           <div class="mb-20 h-[80px]"></div>
