@@ -438,7 +438,7 @@ export default component$(() => {
             </div>
             <div class="flex mt-12 space-x-4">
               <div class="mr-8">
-                <img width="590px" height="450px" src="public/sampleformimg.jpg" class=""></img>
+                <img width={590} height={450} src="public/sampleformimg.jpg" class=""></img>
               </div>
               <div class="flex-col w-1/2">
                 <p class="text-left text-white font-bold text-[64px] playfair">Ponte en contacto con nosotros</p>
